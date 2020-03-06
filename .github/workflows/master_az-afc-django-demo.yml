@@ -18,7 +18,7 @@ jobs:
     - name: Set up Python version
       uses: actions/setup-python@v1
       with:
-        python-version: '3.6'
+        python-version: '3.8'
 
     - name: Install Python dependencies
       run: |
@@ -33,5 +33,5 @@ jobs:
       with:
         app-name: 'az-afc-django-demo'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_9e85668dea32499cad71a74c14a52e17 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_8d71f09bf7ca424abb26619313155a53 }}
         package: './myapp.zip'
