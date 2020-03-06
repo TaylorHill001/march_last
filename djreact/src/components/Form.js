@@ -63,7 +63,7 @@ class CustomForm extends React.Component {
 
         switch ( requestType ) {
             case 'post':
-                return axios.post('http://127.0.0.1:8000/api/', {
+                return axios.post('https://az-afc-django-demo.azurewebsites.net/api/', {
                     email: email, 
                     title: companyName, 
                     poc: poc, 
@@ -75,7 +75,7 @@ class CustomForm extends React.Component {
                 .then(res => console.log(res))
                 .catch(error => console.err(error));
             case 'put':
-                return axios.put(`http://127.0.0.1:8000/api/${articleID}/`, {
+                return axios.put(`https://az-afc-django-demo.azurewebsites.net/api/${articleID}/`, {
                     email: email, 
                     title: companyName, 
                     poc: poc, 
