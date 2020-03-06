@@ -33,5 +33,5 @@ jobs:
       with:
         app-name: 'az-afc-django-demo'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_e7d9952387ca40eda92b8a24ae0b17c0 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_c08bbcf5ddf7410ea0a65c177c50bc7c }}
         package: './myapp.zip'
