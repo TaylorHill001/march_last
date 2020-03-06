@@ -13,7 +13,7 @@ class ArticleDetail1 extends React.Component {
 
     componentDidMount() {
         const articleID = this.props.match.params.articleID;
-        axios.get(`http://127.0.0.1:8000/api/${articleID}`)
+        axios.get(`https://az-afc-django-demo.azurewebsites.net/api/${articleID}`)
             .then(res => {
                 this.setState({
                     article: res.data
@@ -23,7 +23,7 @@ class ArticleDetail1 extends React.Component {
 
     handleDelete = (event) => {
         const articleID = this.props.match.params.articleID;
-        axios.delete(`http://127.0.0.1:8000/api/${articleID}`);
+        axios.delete(`https://az-afc-django-demo.azurewebsites.net/api/${articleID}`);
         this.props.history.push('/');
         this.forceUpdate();
     }
